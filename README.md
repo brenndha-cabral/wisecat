@@ -14,22 +14,14 @@
   </p>
 </p>
 <br/>
-<br/>
 
 ## **Usage**:
-<hr>
-<br/>
 To use WiseCat go to: (deploy here) and ask Mr Cat for advice.
-<br/>
 <br/>
 
 ## **Decisions**:
-<hr>
-<br/>
-
 ### [**ESLint**](https://github.com/airbnb/javascript)
 The project also has strict lint rules for javascript (Airbnb rules) and CSS (styledlint).
-<br/>
 
 ### [**React**](https://reactjs.org/)
 I understand that using React in this project made me practice the use of technology and fix related knowledge.
