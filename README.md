@@ -1,4 +1,4 @@
-## :construction: Under contruction :construction:
+## :construction: Under construction :construction:
 <br/>
 <p align="center">
     <img src="./public/assets/images/banner.png" alt="" width="1000">
