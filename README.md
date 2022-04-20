@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-    <!-- <img src="" alt="" width="1000"> -->
+    <img src="./public/assets/images/banner.png" alt="" width="1000">
 
   <h3 align="center">WiseCat by <a href="https://www.linkedin.com/in/brenndhacabral/">Brenndha Cabral</a></h3>
  <br/>
