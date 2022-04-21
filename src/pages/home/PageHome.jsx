@@ -1,7 +1,7 @@
 import React from 'react';
-import './home.css';
+import './pageHome.css';
 
-function Home() {
+function PageHome() {
   return (
     <div>
       <h1>
@@ -17,4 +17,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default PageHome;
