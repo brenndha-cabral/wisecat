@@ -2,7 +2,7 @@ export const requestAdvices = async () => {
   try {
     const URL = 'https://api.adviceslip.com/advice';
     const response = await fetch(URL);
-    const { advice } = await response.json();
+    const { slip: { advice } } = await response.json();
     return advice;
   } catch (error) {
     throw new Error(error.message);

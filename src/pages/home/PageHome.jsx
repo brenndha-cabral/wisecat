@@ -1,12 +1,19 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import myContext from '../../contextAPI/myContext';
+import { requestAdvices } from '../../services/requestAPIs';
 import './pageHome.css';
 
 function PageHome() {
   const navigate = useNavigate();
 
   const { setAdvices } = useContext(myContext);
+
+  const handleAdvice = async () => {
+    const advice = await requestAdvices();
+
+    setAdvices(advice);
+  };
 
   return (
     <div>
@@ -17,7 +24,7 @@ function PageHome() {
       <button
         type="button"
         onClick={() => {
-          setAdvices();
+          handleAdvice();
           navigate('/advices');
         }}
       >
