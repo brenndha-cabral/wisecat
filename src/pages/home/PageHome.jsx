@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import myContext from '../../contextAPI/myContext';
-import HandleAdvice from '../../helpers/handleAdvice';
+import handleAdviceAndCatImage from '../../helpers/handleAdviceAndCatImage';
 import './pageHome.css';
 
 function PageHome() {
-  const { setAdvices } = useContext(myContext);
+  const { sethandleInfos } = useContext(myContext);
   const navigate = useNavigate();
 
   return (
@@ -17,7 +17,7 @@ function PageHome() {
       <button
         type="button"
         onClick={async () => {
-          setAdvices(await HandleAdvice());
+          sethandleInfos(await handleAdviceAndCatImage());
           navigate('/advices');
         }}
       >

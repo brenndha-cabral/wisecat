@@ -1,22 +1,25 @@
 import React, { useContext } from 'react';
+import handleAdviceAndCatImage from '../../helpers/handleAdviceAndCatImage';
 import myContext from '../../contextAPI/myContext';
-import handleAdvice from '../../helpers/handleAdvice';
 import './pageAdvices.css';
 
 function Advices() {
-  const { advices, setAdvices } = useContext(myContext);
+  const { handleInfos, setHandleInfos } = useContext(myContext);
 
   return (
     <main>
       <button
         type="button"
         onClick={async () => {
-          setAdvices(await handleAdvice());
+          setHandleInfos(await handleAdviceAndCatImage());
         }}
       >
         Next advice
       </button>
-      <h1>{ advices }</h1>
+      <div>
+        <h1>{ handleInfos.advice }</h1>
+        <img src={handleInfos.catImage} alt="Cat" />
+      </div>
     </main>
   );
 }
