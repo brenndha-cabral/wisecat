@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import myContext from './myContext';
 
 function Provider({ children }) {
-  const [advices, setAdvices] = useState('');
-
-  const [catsPictures, setCatsPictures] = useState('');
+  const [handleInfos, setHandleInfos] = useState({
+    advice: '',
+    catImage: '',
+  });
 
   const memoizedValue = useMemo(() => ({
-    advices, setAdvices, catsPictures, setCatsPictures,
-  }), [advices, catsPictures]);
+    handleInfos, setHandleInfos,
+  }), [handleInfos]);
 
   return (
     <myContext.Provider value={memoizedValue}>
