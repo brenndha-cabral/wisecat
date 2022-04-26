@@ -13,8 +13,8 @@ export const requestCatsImages = async () => {
   try {
     const URL = 'https://api.thecatapi.com/v1/images/search';
     const response = await fetch(URL);
-    const { url } = await response.json();
-    return url;
+    const catImage = await response.json();
+    return catImage[0].url;
   } catch (error) {
     throw new Error(error.message);
   }
