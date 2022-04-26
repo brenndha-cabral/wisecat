@@ -4,7 +4,7 @@ import PageHome from '../pages/home/PageHome';
 import PageAdvices from '../pages/advices/PageAdvices';
 import PageNotFound from '../pages/notFound/PageNotFound';
 
-function PageRoutes() {
+function RoutesCentral() {
   return (
     <BrowserRouter>
       <Routes>
@@ -16,4 +16,4 @@ function PageRoutes() {
   );
 }
 
-export default PageRoutes;
+export default RoutesCentral;

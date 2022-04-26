@@ -5,7 +5,7 @@ import handleAdviceAndCatImage from '../../helpers/handleAdviceAndCatImage';
 import './pageHome.css';
 
 function PageHome() {
-  const { sethandleInfos } = useContext(myContext);
+  const { setHandleInfos } = useContext(myContext);
   const navigate = useNavigate();
 
   return (
@@ -17,7 +17,7 @@ function PageHome() {
       <button
         type="button"
         onClick={async () => {
-          sethandleInfos(await handleAdviceAndCatImage());
+          setHandleInfos(await handleAdviceAndCatImage());
           navigate('/advices');
         }}
       >

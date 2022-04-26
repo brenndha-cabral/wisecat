@@ -1,11 +1,11 @@
 import React from 'react';
 import Provider from './contextAPI/myProvider';
-import PageRoutes from './routes/PageRoutes';
+import RoutesCentral from './routes/RoutesCentral';
 
 function App() {
   return (
     <Provider>
-      <PageRoutes />
+      <RoutesCentral />
     </Provider>
   );
 }
